@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 20px;
+}
+
+main ul {
+  list-style-type: none;
+}
+
+main ul .trainCard {
+  margin-bottom: 30px;
+}
+
+main ul .trainCard h1 {
+  font-size: 1.2rem;
+}
+
+main ul .trainCard li {
+  text-transform: uppercase;
+}
+

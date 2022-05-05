@@ -13,10 +13,18 @@
    </head>
    <body>
       <main>
-         @dd($trainsList)
-         {{-- @foreach($trainsList as $train)
-            <h1>{{ $train->company }}</h1>
-         @endforeach --}}
+         <ul>
+            @foreach($trainsList as $train)
+            <div class="trainCard">
+                  <h1>Informazioni sui prossimi treni in partenza:</h1>
+                  <li>Nome compagnia: {{ $train->company }}</li>
+                  <li>Partenza da: {{ $train->departure_station }}</li>
+                  <li>Arrivo a:{{ $train->arrival_station }}</li>
+                  <li>Orario partenza: {{ $train->departure_time }}</li>
+                  <li>Orario d'arrivo: {{ $train->arrival_time }}</li>
+               </div>
+            @endforeach
+         </ul>
       </main>
    </body>
    </html>

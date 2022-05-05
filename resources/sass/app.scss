@@ -1,1 +1,21 @@
-//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 20px;
+    ul {
+        list-style-type: none;
+        .trainCard {
+            margin-bottom: 30px;
+            h1 {
+                font-size: 1.2rem;
+            }
+            li {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
