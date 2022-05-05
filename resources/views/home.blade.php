@@ -13,9 +13,10 @@
    </head>
    <body>
       <main>
-         @foreach($trainsList as $train)
+         @dd($trainsList)
+         {{-- @foreach($trainsList as $train)
             <h1>{{ $train->company }}</h1>
-         @endforeach
+         @endforeach --}}
       </main>
    </body>
    </html>
