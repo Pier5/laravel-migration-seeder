@@ -8,16 +8,17 @@ main {
   margin: 20px;
 }
 
+main h1 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
 main ul {
   list-style-type: none;
 }
 
 main ul .trainCard {
   margin-bottom: 30px;
-}
-
-main ul .trainCard h1 {
-  font-size: 1.2rem;
 }
 
 main ul .trainCard li {
