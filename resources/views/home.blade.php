@@ -25,7 +25,7 @@
                </div>
             @endforeach
          </ul>
-         <div class="page-number"><small>{{ $trainsList->links() }}</small></div>
+         <span>{{ $trainsList->links() }}</span>
       </main>
    </body>
    </html>

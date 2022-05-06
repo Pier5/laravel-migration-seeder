@@ -6,6 +6,7 @@
 
 main {
   margin: 20px;
+  position: relative;
 }
 main h1 {
   font-size: 1.2rem;
@@ -19,4 +20,15 @@ main ul .trainCard {
 }
 main ul .trainCard li {
   text-transform: uppercase;
+}
+main .pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+main .pagination a {
+  text-decoration: none;
+}
+main .pagination li {
+  padding: 0 10px;
+  color: black;
 }

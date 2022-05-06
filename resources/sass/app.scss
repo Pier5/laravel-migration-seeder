@@ -6,6 +6,7 @@
 
 main {
     margin: 20px;
+    position: relative;
     h1 {
         font-size: 1.2rem;
         margin-bottom: 20px;
@@ -17,6 +18,17 @@ main {
             li {
                 text-transform: uppercase;
             }
+        }
+    }
+    .pagination {
+        display: flex;
+        justify-content: flex-end;
+        a {
+            text-decoration: none;
+        }
+        li {
+            padding: 0 10px;
+            color: black;
         }
     }
 }
