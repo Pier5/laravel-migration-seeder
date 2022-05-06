@@ -8,8 +8,12 @@ use App\Train;
 class PageController extends Controller
 {
     public function index() {
+
+        // tutti i treni
+        $trainsList = Train::all();
+
         // in partenza oggi
-        $trainsList = Train::whereDate('departure_time', date('Y-m-d'))->orderBy('departure_time', 'asc')->get(); 
+        // $trainsList = Train::whereDate('departure_time', date('Y-m-d'))->orderBy('departure_time', 'asc')->get(); 
 
         // controllo anche sull'orario
         // $trainsList = Train::whereDate('departure_time', date('Y-m-d'))->whereTime('departure_time', '>=', date('H:i:s'))->orderBy('departure_time', 'asc')->get(); 
