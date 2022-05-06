@@ -20,11 +20,12 @@
                   <li>Nome compagnia: {{ $train->company }}</li>
                   <li>Partenza da: {{ $train->departure_station }}</li>
                   <li>Arrivo a: {{ $train->arrival_station }}</li>
-                  <li>Orario partenza: {{ $train->departure_time }}</li>
-                  <li>Orario d'arrivo: {{ $train->arrival_time }}</li>
+                  <li>Giorno e orario partenza: {{ $train->departure_time }}</li>
+                  <li>Giorno e orario d'arrivo: {{ $train->arrival_time }}</li>
                </div>
             @endforeach
          </ul>
+         <div class="page-number"><small>{{ $trainsList->links() }}</small></div>
       </main>
    </body>
    </html>

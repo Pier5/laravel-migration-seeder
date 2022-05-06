@@ -24,7 +24,7 @@ class PageController extends Controller
 
 
         // in partenza quest'anno
-        // $trainsList = Train::whereYear('departure_time', date('Y'))->orderBy('departure_time', 'asc')->get();
+        $trainsList = Train::whereYear('departure_time', date('Y'))->paginate(15);
         
         return view('home', compact('trainsList'));
     }

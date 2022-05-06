@@ -54,7 +54,7 @@ class TrainsTableSeeder extends Seeder
                 'company'           => $faker->company() ,
                 'departure_station' => $faker->city(),
                 'arrival_station'   => $faker->city(),
-                'departure_time'    => $faker->dateTimeBetween('now', '+1 week'),
+                'departure_time'    => $faker->dateTimeBetween('now'),
                 'arrival_time'      => $faker->dateTimeBetween('now', '+1 week'),
             ];
             $train = new Train();
