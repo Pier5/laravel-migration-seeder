@@ -10,7 +10,7 @@ class PageController extends Controller
     public function index() {
 
         // tutti i treni
-        $trainsList = Train::all();
+        // $trainsList = Train::all();
 
         // in partenza oggi
         // $trainsList = Train::whereDate('departure_time', date('Y-m-d'))->orderBy('departure_time', 'asc')->get(); 
